@@ -7,62 +7,48 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import utilities.UserData;
 
 public class googlePage {
-	
+
 	WebDriver driver;
-	int count=0;
-	By webelement_textbox=By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[1]/div/div[1]/input");
-	public googlePage(WebDriver driver)
-	{
-		
-		this.driver=driver;
-		
+	int count = 0;
+
+	By webelement_textbox = By.xpath("//*[@id='tsf']/div[2]/div/div[1]/div/div[1]/input");
+
+	public googlePage(WebDriver driver) {
+
+		this.driver = driver;
+
 	}
-	
-	public void auto_suggestions()
-	{
-		driver.findElement(webelement_textbox).sendKeys("wedding");
-		List<WebElement> elm= new ArrayList<WebElement>();
-		try
-		{
-			Thread.sleep(2000);
-		}
-		catch(Exception e)
-		{
+
+	public void auto_suggestions(String str) {
+		
+		driver.findElement(webelement_textbox).sendKeys(str);
+		List<WebElement> elm_suggestion = new ArrayList<WebElement>();
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
-		elm=driver.findElements(By.xpath("//div[@jscontroller='tg8oTe']//div//ul//li"));
-		System.out.println(elm);
-		System.out.println(elm.size());
-		for(WebElement e:elm)
-		{
-			String k= e.getText();
-			System.out.println(k);
-			if(k.contains("wedding"))
-			{
-				System.out.println(k);
-				count++;
+
+		elm_suggestion = driver.findElements(By.xpath("//div[@jscontroller='tg8oTe']//div//ul//li"));
+
+		for (WebElement e : elm_suggestion) {
+			String text = e.getText();
+
+			if (text.toLowerCase().indexOf(str.toLowerCase()) != -1) {
+
+				System.out.println("The searched text " + str + " is present in " + text);
 			}
-			System.out.println(count);
+
+			else {
+				System.out.println("The searched text " + str + " is not present in " + text);
+			}
 		}
-		
-		if(elm.size()==count)
-		{
-			System.out.println("All elements contains search string");
-		}
-		
-		else
-		{
-			System.out.println("Few elements contains search string: "+count);
-		}
-		
-		System.out.println(count);
+
 	}
-	
-	
 
 }

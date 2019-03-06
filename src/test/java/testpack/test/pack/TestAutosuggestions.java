@@ -1,6 +1,7 @@
 package testpack.test.pack;
 
 import java.io.File;
+import java.util.Scanner;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import Pages.googlePage;
+import utilities.UserData;
 
 public class TestAutosuggestions {
 	WebDriver driver;
@@ -23,7 +25,7 @@ public class TestAutosuggestions {
 		    driver= new ChromeDriver();
 		    p=new googlePage(driver);
 		    driver.manage().window().fullscreen();
-		    driver.navigate().to("https://www.google.com");
+		    driver.navigate().to(UserData.url);
 			
 		
 		
@@ -33,7 +35,7 @@ public class TestAutosuggestions {
 	@Test
 	public void  verif_string()
 	{
-	p.auto_suggestions();	
+	p.auto_suggestions( UserData.search_string);	
 	}
 
 }
