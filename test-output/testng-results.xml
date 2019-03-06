@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9673" started-at="2019-03-06T05:51:43Z" finished-at="2019-03-06T05:51:53Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9673" started-at="2019-03-06T05:51:43Z" finished-at="2019-03-06T05:51:53Z">
+      <class name="testpack.test.pack.TestAutosuggestions">
+        <test-method status="PASS" signature="intit_browser()[pri:0, instance:testpack.test.pack.TestAutosuggestions@28d25987]" name="intit_browser" is-config="true" duration-ms="9567" started-at="2019-03-06T05:51:43Z" finished-at="2019-03-06T05:51:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intit_browser -->
+        <test-method status="PASS" signature="verif_string()[pri:0, instance:testpack.test.pack.TestAutosuggestions@28d25987]" name="verif_string" duration-ms="95" started-at="2019-03-06T05:51:53Z" finished-at="2019-03-06T05:51:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verif_string -->
+      </class> <!-- testpack.test.pack.TestAutosuggestions -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
