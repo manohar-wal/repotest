@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12584" started-at="2019-03-06T09:38:34Z" finished-at="2019-03-06T09:38:47Z">
+  <suite name="Default suite" duration-ms="11157" started-at="2019-03-06T09:46:48Z" finished-at="2019-03-06T09:46:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12584" started-at="2019-03-06T09:38:34Z" finished-at="2019-03-06T09:38:47Z">
+    <test name="Default test" duration-ms="11157" started-at="2019-03-06T09:46:48Z" finished-at="2019-03-06T09:46:59Z">
       <class name="testpack.test.pack.TestAutosuggestions">
-        <test-method status="PASS" signature="intit_browser()[pri:0, instance:testpack.test.pack.TestAutosuggestions@28d25987]" name="intit_browser" is-config="true" duration-ms="9091" started-at="2019-03-06T09:38:34Z" finished-at="2019-03-06T09:38:43Z">
+        <test-method status="PASS" signature="intit_browser()[pri:0, instance:testpack.test.pack.TestAutosuggestions@28d25987]" name="intit_browser" is-config="true" duration-ms="7708" started-at="2019-03-06T09:46:48Z" finished-at="2019-03-06T09:46:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intit_browser -->
-        <test-method status="PASS" signature="verif_string()[pri:0, instance:testpack.test.pack.TestAutosuggestions@28d25987]" name="verif_string" duration-ms="3477" started-at="2019-03-06T09:38:43Z" finished-at="2019-03-06T09:38:47Z">
+        <test-method status="PASS" signature="verif_string()[pri:0, instance:testpack.test.pack.TestAutosuggestions@28d25987]" name="verif_string" duration-ms="3413" started-at="2019-03-06T09:46:55Z" finished-at="2019-03-06T09:46:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verif_string -->

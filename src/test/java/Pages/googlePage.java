@@ -36,6 +36,15 @@ public class googlePage {
 
 		elm_suggestion = driver.findElements(By.xpath("//div[@jscontroller='tg8oTe']//div//ul//li"));
 
+		if (elm_suggestion.size()!=0)
+		{
+			System.out.println("Auto-suggestion list is populated");
+		}
+		else
+		{
+			System.out.println("No Auto-suggestion list is populated");
+		}
+			
 		for (WebElement e : elm_suggestion) {
 			String text = e.getText();
 
